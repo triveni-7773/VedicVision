@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class MathOperations {
+    public static double[] calculate(double a, double b) {
+        double sum = a + b;
+        double difference = a - b;
+        double product = a * b;
+        double quotient;
+        if (b!= 0) {
+            quotient = a / b;
+        
+        } else {
+            quotient = Double.NaN; 
+        }
+
+        return new double[]{sum, difference, product, quotient};
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Enter second number: ");
+        double num2 = sc.nextDouble();
+        double[] results = calculate(num1, num2);
+        System.out.println("Sum: " + results[0]);
+        System.out.println("Difference: " + results[1]);
+        System.out.println("Product: " + results[2]);
+        System.out.println("quotient: "+results[3]); 
+    }
+}
