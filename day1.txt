@@ -1,0 +1,44 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n,ch;
+       System.out.println("welcome to smart cafe");
+       while(true){
+       System.out.println("1.coffee     30/-");
+       System.out.println("2.tea        30/-");
+       System.out.println("3.sandwich   50/-");
+       System.out.println("4.burger     70/-");
+       System.out.println("5.exit");
+       System.out.print("enter ur choice:");
+       ch=sc.nextInt();
+       switch(ch){
+           case 1:System.out.println("you selected coffee");
+           System.out.print("enter quantity:");
+           n=sc.nextInt();
+           System.out.println("total price="+n*30+"/-");
+           System.out.println("thank u for visiting\n");
+           break;
+           case 2:System.out.println("you selected tea");
+           System.out.println("enter quantity:");
+           n=sc.nextInt();
+           System.out.println("total price="+n*30+"/-");
+           System.out.println("thank u for visiting");
+           break;
+           case 3:System.out.println("you selected sandwich");
+           System.out.println("enter quantity:");
+           n=sc.nextInt();
+           System.out.println("total price="+n*50+"/-");
+           System.out.println("thank u for visiting");
+           break;
+           case 4:System.out.println("you selected burger");
+           System.out.println("enter quantity:");
+           n=sc.nextInt();
+           System.out.println("total price="+n*70+"/-");
+           System.out.println("thank u for visiting");
+           break;
+           case 5:return;
+       }
+       }
+    }
+}
